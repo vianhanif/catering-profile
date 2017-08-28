@@ -15,6 +15,8 @@ const mathReducer = (state = initialState, action) => {
         lastValues: [...state.lastValues, action.payload]
       }
     break
+    default:
+    break
   }
   return state
 }
@@ -31,6 +33,8 @@ const userReducer = (state = {
         lastValues: [...state.lastValues, action.payload]
       }
       break
+      default:
+      break
   }
   return state
 }
@@ -46,7 +50,7 @@ const store = createStore(
     userReducer
   }),
   applyMiddleware(
-    // basicLogger,
+    basicLogger,
     logger
   )
 )
