@@ -2,21 +2,32 @@
 @import "./functions";
 @import "./mixins";
 
-h1, h2 {
-  font-weight: normal;
-}
+//
+// h1, h2 {
+//   font-weight: normal;
+// }
+//
+//
+// a {
+//   color: $primary;
+// }
+//
+// body{
+//   background: $secondary;
+//   font-family: 'Avenir', Helvetica, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   text-align: center;
+//   color: shade($primary, 70%);
+//   margin-top: 60px;
+// }
 
-
-a {
-  color: $primary;
-}
-
-body{
-  background: $secondary;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: shade($primary, 70%);
-  margin-top: 60px;
+#view-source {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900;
 }
