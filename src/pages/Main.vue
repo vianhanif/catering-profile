@@ -1,9 +1,10 @@
 <template lang="html">
-  <Hello/>
+  <div>
+    Main Page
+  </div>
 </template>
 
 <script>
-import Hello from 'components/Hello/app'
 
 export default {
   name: 'Main',
@@ -11,9 +12,6 @@ export default {
     return {
 
     }
-  },
-  components: {
-    Hello
   }
 }
 </script>
