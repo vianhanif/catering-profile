@@ -1,4 +1,3 @@
-// import sha1 from 'sha1'
 import axios from 'axios'
 require('es6-promise').polyfill()
 
