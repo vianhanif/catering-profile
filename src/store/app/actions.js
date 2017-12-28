@@ -5,7 +5,7 @@ export default {
   [action.VIEW_CONFIG] ({commit}) {
     let database = firebase.database()
     database.ref('config').on('value', (data) => {
-      commit(mutation.VIEW_CONFIG, data.val())
+      commit(action.VIEW_CONFIG, data.val())
     })
   }
 }
