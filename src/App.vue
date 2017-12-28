@@ -6,6 +6,8 @@
 
 <script>
 
+import * as action from 'store/app/action-types'
+
 export default {
   name: 'App',
   metaInfo () {
@@ -32,6 +34,9 @@ export default {
     let recaptchaScript = document.createElement('script')
     recaptchaScript.setAttribute('src', 'https://code.getmdl.io/1.3.0/material.min.js')
     document.head.appendChild(recaptchaScript)
+  },
+  mounted () {
+    this.$store.dispatch(action.VIEW_CONFIG)
   },
   data () {
     return {

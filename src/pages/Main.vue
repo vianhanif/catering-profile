@@ -4,7 +4,7 @@
       <div class="demo-blog__posts mdl-grid">
         <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
           <div class="mdl-card__media mdl-color-text--grey-50">
-            <h3><a href="entry.html">Coffee Pic</a></h3>
+            <h3><a href="entry.html">{{VIEW_CONFIG.title}}</a></h3>
           </div>
           <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
             <div class="minilogo"></div>
@@ -119,8 +119,16 @@
 
 <script>
 
+import { mapGetters } from 'vuex'
+import * as action from 'store/app/action-types'
+
 export default {
   name: 'Main',
+  computed: {
+    ...mapGetters([
+      `${action.VIEW_CONFIG}`
+    ])
+  },
   mounted () {
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function (el) {
       let link = el.querySelector('a')
