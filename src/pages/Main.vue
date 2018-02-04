@@ -17,6 +17,24 @@
           description="<p>
             <b>Deskripsi Resto</b> (contoh: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.)
           </p>"
+          :links="[
+            {
+              title: 'Contact Us',
+              type: 'break',
+              list: [
+                { head: 'Telp : ', text: '0878-7792-3910', link: 'tel:087877923910' },
+                { head: 'E-Mail : ', text: 'neni.rokhayati.mail@gmail.com', link: 'mailto:neni.rokhayati.mail@gmail.com' }
+              ]
+            },
+            {
+              title: 'Social Media',
+              type: 'inline',
+              list: [
+                { text: 'Facebook', link: 'https://facebook.com' },
+                { text: 'Instagram', link: 'https://instagram.com' }
+              ]
+            }
+          ]"
           size="12"/>
         <card
           :image="require('assets/img/image1.jpeg')"
@@ -123,5 +141,6 @@ export default {
   }
   .mdl-card {
     min-height: 0px;
+    border-radius: 4px;
   }
 </style>
