@@ -1,42 +1,58 @@
 <template lang="html">
   <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
     <main class="mdl-layout__content" style="padding-bottom: 100px;">
+      <div class="mdl-cell mdl-cell--12-col">
+        <div class="demo-blog__posts center mdl-grid">
+          <card
+            :avatar="require('assets/img/imageTitle.jpeg')"
+            name=""
+            size="6"/>
+        </div>
+      </div>
       <div class="demo-blog__posts mdl-grid">
         <card
-          title="Title"
-          description="Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad sunt ullamco officia. Ex officia laborum et consequat duis."
+          :showImage="false"
+          :image="require('assets/img/imageMain.jpeg')"
+          :bigImage="true"
+          description="<p>
+            <b>Deskripsi Resto</b> (contoh: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.)
+          </p>"
+          size="12"/>
+        <card
+          :image="require('assets/img/image1.jpeg')"
+          description="<p>
+            <b>Deskripsi Menu</b> (contoh: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.)
+          </p>"
+          subTitle="Keterangan Biaya"
+          size="6"/>
+          <card
+            :image="require('assets/img/image2.jpeg')"
+            description="<p>
+              <b>Deskripsi Menu</b> (contoh: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.)
+            </p>"
+            subTitle="Keterangan Biaya"
+            size="6"/>
+        <card
+          :image="require('assets/img/image3.jpeg')"
+          description="<p>
+            <b>Deskripsi Menu</b> (contoh: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.)
+          </p>"
+          subTitle="Keterangan Biaya"
+          size="6"/>
+        <card
+          :image="require('assets/img/image4.jpeg')"
+          description="<p>
+            <b>Deskripsi Menu</b> (contoh: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.)
+          </p>"
+          subTitle="Keterangan Biaya"
+          size="6"/>
+        <!-- <card
+          :showImage="false"
           size="8"/>
         <card
-          avatar="require('assets/app/logo.png')"
-          name="Profile"
-          size="4"/>
-        <card
-          title="Title"
-          subTitle="Sub Title"
-          caption="Caption"
-          size="6"/>
-        <card
-          title="Title"
-          subTitle="Sub Title"
-          caption="Caption"
-          size="6"/>
-        <card
-          title="Title"
-          subTitle="Sub Title"
-          caption="Caption"
-          size="6"/>
-        <card
-          title="Title"
-          subTitle="Sub Title"
-          caption="Caption"
-          size="6"/>
-        <card
-          quote="I couldn’t take any pictures but this was an amazing thing…"
-          size="8"/>
-        <card
-          title="Title"
-          description="Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis."
-          size="4"/>
+          :showImage="false"
+          text="Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad sunt ullamco officia. Ex officia laborum et consequat duis."
+          size="4"/> -->
       </div>
       <!-- <footer class="mdl-mini-footer">
         <div class="mdl-mini-footer--left-section">
@@ -99,3 +115,13 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  .mdl-card {
+    min-height: 0px;
+  }
+</style>

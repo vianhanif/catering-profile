@@ -9,6 +9,7 @@ body::before {
     bottom: 0;
     top: 0;
     position: fixed;
+    background-color: white;
 }
 @media (max-width: 512px)  and (-webkit-min-device-pixel-ratio: 1.5),
        (max-width: 512px)  and (min-resolution: 1.5dppx),
@@ -57,6 +58,7 @@ body .demo-blog {
   -webkit-overflow-scrolling: touch;
 }
 .demo-blog .mdl-card {
+  box-shadow: 0px 0px 10px rgba(73,73,73,.76);
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -202,6 +204,11 @@ body .demo-blog {
   right: 28px;
   -webkit-transform: translate(0px, -28px);
           transform: translate(0px, -28px);
+}
+.demo-blog .mdl-card__media {
+  min-height: 250px;
+  background-position: center;
+  background-size: cover;
 }
 .demo-blog .something-else .mdl-card__media {
   font-size: 13px;
