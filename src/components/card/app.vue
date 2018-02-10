@@ -1,12 +1,12 @@
 <template>
-  <div :class="(quote ? 'amazing' : '') + ' mdl-card mdl-cell ' + (!avatar && showImage ? '' : 'something-else') + ' mdl-cell--' + size + '-col'">
+  <div :class="(quote ? 'amazing' : '') + ' mdl-card mdl-cell ' + (!avatar && showImage ? '' : 'something-else') + ' mdl-cell--' + size + '-col' + (avatar ? ' no-bg ' : '')">
     <div class="mdl-card__title mdl-color-text--grey-50" v-if="quote">
       <h3 class="quote">{{quote}}</h3>
     </div>
     <div class="mdl-card__media mdl-color-text--grey-50" v-if="!avatar && showImage" :style="showImage ? `background-image: url('${image}'); ${bigImage ? 'height: 400px;' : ''}` : ''">
       <h3 v-if="title"><a href="#">{{title}}</a></h3>
     </div>
-    <div class="mdl-card__media dark" v-if="avatar && showImage">
+    <div class="mdl-card__media avatar-img" v-if="avatar && showImage">
       <img :src="avatar" style="width: 100%;height: auto;">
       {{name}}
     </div>
@@ -121,5 +121,17 @@ export default {
 }
 .break {
   display: block !important;
+}
+.no-bg {
+  background: none;
+  box-shadow: none !important;
+}
+.avatar-img {
+  padding: 0px;
+  background: none;
+  img {
+    border-radius: 1000px !important;
+    box-shadow: 0px 0px 20px rgba(38,38,38,.99);
+  }
 }
 </style>

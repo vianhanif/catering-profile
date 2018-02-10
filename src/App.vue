@@ -12,7 +12,7 @@ export default {
   name: 'App',
   metaInfo () {
     return {
-      title: this.$route.name,
+      title: 'Sroto Soekarno - Hidangan Khas Purbalingga',
       meta: [
         { charset: 'utf-8' },
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
