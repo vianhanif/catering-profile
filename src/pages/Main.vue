@@ -37,8 +37,8 @@
               title: 'Social Media',
               type: 'inline',
               list: [
-                { text: 'Facebook', link: 'https://facebook.com' },
-                { text: 'Instagram', link: 'https://instagram.com' }
+                { text: 'Facebook', link: 'https://www.facebook.com/Sroto-Soekarno-143634219655879/' },
+                { text: 'Instagram', link: 'https://www.instagram.com/srotosoekarno/' }
               ]
             }
           ]"
