@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
+  <div id="app" v-if="!loading">
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-
+import { mapGetters } from 'vuex'
 import * as action from 'store/app/action-types'
 
 export default {
@@ -33,12 +33,22 @@ export default {
       ]
     }
   },
+  computed: {
+    ...mapGetters({
+      viewConfig: action.VIEW_CONFIG
+    })
+  },
   mounted () {
-    this.$store.dispatch(action.VIEW_CONFIG)
+    let self = this
+    this.$store.dispatch(action.VIEW_CONFIG, {
+      callback () {
+        self.loading = false
+      }
+    })
   },
   data () {
     return {
-
+      loading: true
     }
   }
 }

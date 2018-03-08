@@ -10,7 +10,32 @@ export default new Router({
     {
       path: '/',
       name: 'Main',
-      component: require('page/Main').default
+      redirect: '/option/packages',
+      component: require('page/Main').default,
+      children: [
+        {
+          path: 'intro',
+          name: 'Intro',
+          component: require('page/home/app').default
+        },
+        {
+          path: 'option',
+          name: 'Option',
+          component: require('page/option/app').default,
+          children: [
+            {
+              path: 'packages',
+              name: 'Packages',
+              component: require('page/packages/app').default
+            },
+            {
+              path: 'gofood',
+              name: 'GoFood',
+              component: require('page/gofood/app').default
+            }
+          ]
+        }
+      ]
     }
   ]
 })

@@ -111,9 +111,9 @@ import card from 'components/card/app'
 export default {
   name: 'Main',
   computed: {
-    ...mapGetters([
-      `${action.VIEW_CONFIG}`
-    ])
+    ...mapGetters({
+      viewConfig: action.VIEW_CONFIG
+    })
   },
   mounted () {
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function (el) {
