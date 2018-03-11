@@ -4,10 +4,12 @@
       v-for="(item, index) in viewConfig.list.packages"
       v-if="item !== undefined"
       :key="index"
-      :showImage="false"
-      :description="item.description"
+      :showImage="true"
+      :image="item.image"
+      :title="item.name"
       :subTitle="item.pricing"
-      size="6"/>
+      :options="item.options"
+      size="12"/>
   </div>
 </template>
 <script>

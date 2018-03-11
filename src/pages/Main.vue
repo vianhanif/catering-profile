@@ -1,14 +1,6 @@
 <template lang="html">
   <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
     <main class="mdl-layout__content" style="padding-bottom: 100px;">
-      <div class="mdl-cell mdl-cell--12-col">
-        <div class="demo-blog__posts center mdl-grid">
-          <card
-            :avatar="require('assets/img/logo_sroto2.png')"
-            name=""
-            size="6"/>
-        </div>
-      </div>
       <router-view></router-view>
     </main>
   </div>
@@ -61,5 +53,8 @@ export default {
   .mdl-card {
     min-height: 0px;
     border-radius: 4px;
+  }
+  .mdl-layout__content {
+    padding-top: 100px !important;
   }
 </style>
