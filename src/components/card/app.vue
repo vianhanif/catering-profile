@@ -4,7 +4,7 @@
       <h3 class="quote">{{quote}}</h3>
     </div>
     <div class="mdl-card__media mdl-color-text--grey-50 image-bg" v-if="!avatar && showImage" :style="showImage ? `background-image: url('${image}'); ${bigImage ? 'height: 400px;' : ''}` : ''">
-      <h3 v-if="title" class="head-title"><a href="#">{{title}}</a></h3>
+      <h3 v-if="title" class="head-title"><a href="#" v-html="title"></a></h3>
     </div>
     <div class="mdl-card__media avatar-img" v-if="avatar && showImage">
       <img :src="avatar" style="width: 100%;height: auto;">
