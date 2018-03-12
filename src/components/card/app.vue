@@ -118,6 +118,7 @@ export default {
   width: 95%;
 }
 .link-container {
+  text-align: left;
   .link-item--container {
     margin-bottom: 15px;
     width: 100%;
@@ -132,7 +133,11 @@ export default {
       .link-items {
         margin-top: 0px;
         margin-bottom: 10px;
+        line-height: 1.25;
         b {
+          @media(max-width: 768px) {
+            display: none;
+          }
           font-size: 18px;
           padding-right: 5px;
         }
