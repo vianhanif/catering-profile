@@ -105,7 +105,7 @@ export default {
   height: 100%;
 }
 .subtitle {
-  font-size: 26px;
+  font-size: 20px;
   text-align: right;
   font-weight: bold;
 }
@@ -122,7 +122,7 @@ export default {
     margin-bottom: 15px;
     width: 100%;
     .link-title {
-      font-size: 22px;
+      font-size: 18px;
       margin-top: 15px;
       margin-bottom: 15px;
     }
@@ -130,16 +130,16 @@ export default {
       display: flex;
       justify-content: flex-start;
       .link-items {
-        margin-top: 10px;
+        margin-top: 0px;
         margin-bottom: 10px;
         b {
-          font-size: 22px;
+          font-size: 18px;
           padding-right: 5px;
         }
         display: flex;
         margin-left: 10px;
         a {
-          font-size: 22px;
+          font-size: 18px;
           color: rgb(24,98,20);
           text-decoration: none;
         }
@@ -165,7 +165,7 @@ export default {
 .list-options {
   list-style: none;
   padding-left: 0px;
-  font-size: 18px;
+  font-size: 14px;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -176,23 +176,24 @@ export default {
     border-radius: 6px;
     margin: 5px;
     ul {
-      padding-left: 5px;
-      padding-right: 10px;
+      padding-left: 0px;
+      padding-right: 0px;
       list-style: none;
       li {
         border: none;
         list-style: none;
         font-weight: normal;
-        font-size: 20px;
+        font-size: 14px;
       }
     }
   }
 }
 .head-title {
   background-color: #4B4B4B;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 18px;
 }
 </style>
