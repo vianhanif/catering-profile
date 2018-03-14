@@ -1,8 +1,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux'
+import appAction from '../../store/app/actions'
+import * as appTypes from '../../store/app/types'
 import './style.scss'
 
-export default class Home extends Component {
+export default connect(
+  state => ({...state}),
+  commit => ({
+    loadData () {
+      appAction[appTypes.LOAD_DATA] (commit, {
+        data: {},
+        callback () {}
+      })
+    }
+  })
+)(class Home extends Component {
 
   static propTypes = {
 
@@ -10,7 +23,7 @@ export default class Home extends Component {
 
   constructor(props) {
     super(props);
-
+    this.props.loadData()
     this.state = {
 
     };
@@ -30,4 +43,4 @@ export default class Home extends Component {
     );
   }
 
-}
+})
