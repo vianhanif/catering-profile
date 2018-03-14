@@ -28,7 +28,7 @@
     <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 subtitle" v-if="subTitle || caption || links" style="width: 100%;">
       <div :class="icon" v-if="icon"></div>
       <div style="width: 100%;">
-        <div v-html="subTitle"></div>
+        <div v-html="subTitle" style="line-height: 1.5;"></div>
         <span>{{caption}}</span>
         <div class="link-container">
           <div v-for="(item, index) in links" :key="index" class="link-item--container">
