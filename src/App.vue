@@ -21,7 +21,7 @@ export default {
         { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
         { name: 'apple-mobile-web-app-title', content: 'Material Design Lite' },
         { name: 'description', content: 'A front-end template that helps you build fast, modern mobile web apps.' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0' }
       ],
       link: [
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' },
