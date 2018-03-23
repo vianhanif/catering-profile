@@ -3,6 +3,7 @@ image: node:latest
 before_script:
  - npm prune
  - npm install
+ - npm install node-sass --only=dev
  - npm install -g firebase-tools
 
 stages:
