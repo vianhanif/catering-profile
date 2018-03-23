@@ -21,4 +21,4 @@ deploy_to_firebase:
   - master
  script:
   - npm run build
-  - firebase deploy --token $FIREBASE_DEPLOY_KEY
+  - firebase deploy --token "1/nA72ca80vcf7kSrW9Rcby9CsZaRA1XXCHRsCxme1cCE"
